@@ -1,0 +1,395 @@
+@font-face {
+    font-family: "quicksand";
+    src: url("../datas/font/quicksand.ttf");
+}
+
+@font-face {
+    font-family: "newyork";
+    src: url("../datas/font/NewYork.otf");
+}
+
+@font-face {
+    font-family: "made";
+    src: url("../datas/font/made.otf");
+}
+
+@font-face {
+    font-family: "madeb";
+    src: url("../datas/font/madebold.otf");
+}
+
+@font-face {
+    font-family: "madel";
+    src: url("../datas/font/madelight.otf");
+}
+
+
+
+
+body {
+    background: url("../datas/img/bar_rhum.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS HEADER */
+nav {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    margin-left:10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 80%;   
+ 
+}
+nav a :nth-child(){
+    display: flex;
+    justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.log{
+ margin-left:2%
+}
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "made";
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-top: 3%;
+    display: flex;
+  flex-direction: column;
+
+}
+
+.title {
+    color: rgb(255, 255, 255);
+    margin: auto;
+    width: 40%;
+    font-size: 4em;
+    text-align: center;
+    text-shadow: 3px 3px #000000;
+    background-color: #8b1a0188;
+    border: 0.5px solid rgb(228, 224, 224);
+    border-radius: 10px;
+    padding: 1%;
+
+}
+
+nav a:hover {
+    font-family: "madel";
+
+}
+
+
+.nh {
+    color: #8b1a01;
+    font-size: 2em;
+}
+
+
+/* CSS HEADER */
+/* CSS SECTION */
+.banniere {
+    margin-top: 10%;
+    height: 300px;
+    background-color: #c4c4c44b;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
+}
+
+.banniere h1 {
+    font-family: "newyork";
+    color: white;
+    font-weight: bold;
+    text-shadow: 3px 3px #000000;
+    padding-left: 50%;
+}
+
+.banniere p {
+    /* font-family: "newyork"; */
+    background-color: rgba(0, 0, 0, 0.87);
+    border-radius: 5px;
+    width: 90%;
+    font-size: 20px;
+    color: white;
+    height: 20%;
+}
+
+.banniere img {
+    margin-top: 2%;
+    width: 60%;
+    margin-left: 30%;
+    filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.322));
+}
+
+.banniere button {
+    border: none;
+    margin-top: 10%;
+    background-color: rgba(139, 26, 1, 0.815);
+    text-shadow: 2px 2px #000000;
+    color: white;
+    font-size: 18px;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+.banniere button:hover{
+    background-color: rgba(139, 26, 1, 0.5);
+
+}
+
+/* FIN CSS SECTION */
+
+/* CSS TITRE + PRODUITS */
+/* TITRE */
+main {
+    width: 100%;
+    margin-top: 5%;
+}
+
+h1 {
+    font-family: "newyork";
+    color: #8b1a01;
+    text-shadow: 2px 2px rgba(255, 255, 255, 0.548);
+    font-size: 350%;
+    text-align: center;
+}
+
+/* FIN TITRE */
+
+
+/* PRODUITS */
+.container {
+    padding-top: 10%;
+    width: 70%;
+    grid-gap: 130px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "un deux"
+        "trois quatre";
+}
+
+.titre {
+    width: 100%;
+    text-align: center;
+    font-family: "quicksand";
+    font-size: 150%;
+}
+
+.un {
+    grid-area: un;
+    background-color: #9a9a9a71;
+    height: 440px;
+    border-radius: 15px;
+}
+
+.un img {
+    width:60%;
+    margin-left: -30%;
+    margin-top: -33%;
+    filter: drop-shadow(20px 10px 4px rgba(0, 0, 0, 0.322));
+}
+
+.un h4 {
+    margin-left: 25%;
+    font-size: 200%;
+    font-family: "newyork";
+}
+
+.un input {
+    margin-left: 30%;
+    font-size: 200%;
+    font-family: "newyork";
+}
+
+.un p {
+    margin-left: 25%;
+    font-size: 150%;
+    text-align: center;
+    font-family: "newyork";
+}
+
+.deux {
+    grid-area: deux;
+    background-color: #9a9a9a71;
+    height: 440px;
+    border-radius: 15px;
+}
+
+.deux img {
+    width:60%;
+    margin-left: -30%;
+    margin-top: -33%;
+    filter: drop-shadow(20px 10px 4px rgba(0, 0, 0, 0.322));
+}
+.deux h4 {
+    margin-left: 25%;
+    font-size: 200%;
+    font-family: "newyork";
+}
+
+.deux input {
+    margin-left: 30%;
+    font-size: 200%;
+    font-family: "newyork";
+}
+
+.deux p {
+    margin-left: 25%;
+    font-size: 150%;
+    text-align: center;
+    font-family: "newyork";
+}
+
+.trois {
+    grid-area: trois;
+    background-color: #9a9a9a71;
+    height: 440px;
+    border-radius: 15px;
+}
+
+.trois img {
+    width:60%;
+    margin-left: -30%;
+    margin-top: -32%;
+    filter: drop-shadow(20px 10px 4px rgba(0, 0, 0, 0.322));
+}
+
+.trois h4 {
+    margin-left: 25%;
+    font-size: 200%;
+    font-family: "newyork";
+}
+
+.trois input {
+    margin-left: 30%;
+    font-size: 200%;
+    font-family: "newyork";
+}
+
+.trois p {
+    margin-left: 25%;
+    font-size: 150%;
+    text-align: center;
+    font-family: "newyork";
+}
+
+
+.quatre {
+    grid-area: quatre;
+    background-color: #9a9a9a71;
+    height: 440px;
+    border-radius: 15px;
+}
+
+.quatre img {
+    width:60%;
+    margin-left: -30%;
+    margin-top: -30%;
+    filter: drop-shadow(20px 10px 4px rgba(0, 0, 0, 0.322));
+}
+
+.quatre h4 {
+    margin-left: 25%;
+    font-size: 200%;
+    font-family: "newyork";
+}
+
+.quatre input {
+    margin-left: 30%;
+    font-size: 200%;
+    font-family: "newyork";
+}
+
+.quatre p {
+    margin-left: 25%;
+    font-size: 150%;
+    text-align: center;
+    font-family: "newyork";
+}
+
+
+.container2 {
+    padding-top: 10%;
+    width: 70%;
+    grid-gap: 130px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "un deux";
+}
+
+
+/* FIN PROUITS */
+
+/* FOOTER */
+
+footer {
+    bottom: 0%;
+    position: fixed;
+    background-color: black;
+    height: 4vh;
+    width: 100%;
+}
+
+footer h2 {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+@media (max-width: 700px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 2em;
+        color: red;
+        background-color: rgba(0, 0, 0, 0.37);
+
+    }
+
+
+
+}
+
+@media print {
+    body {
+        font-size: 10pt
+    }
+}
+
+@media screen {
+    body {
+        font-size: 13px
+    }
+}
+
+@media screen,
+print {
+    body {
+        line-height: 1.2
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        line-height: 1.4
+    }
+}
